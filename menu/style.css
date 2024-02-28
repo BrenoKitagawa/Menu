@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+*{padding: 0px;
+margin: 0px;
+
+
+
+font-family: Arial, Helvetica, sans-serif;}
+
+
+html{animation:iniciar 1s ease-in-out;}
+
+::-webkit-scrollbar{width: 0;
+height: 0;}
+
+:root{
+    --cor1:#89443d
+}
+
+body{background: rgb(216, 215, 215);
+transform-origin: left;
+}
+
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.212);
+box-shadow: 0 4px 30px black;
+backdrop-filter: blur(9.8px);
+-webkit-backdrop-filter: blur(7.8px);
+position: fixed;
+top: 0;
+transform-origin: left;}
+
+
+header h1{text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid black;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+padding-top: 5px;
+padding-bottom: 5px;
+color: whitesmoke;}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    list-style: none;
+    padding: 20px;
+
+}
+
+header nav ul li a{text-decoration: none;
+font-size: 1.5em;
+color: #000000;
+transition: 0.5s;}
+
+header nav ul li a:hover{color:white; }
+
+main{transform-origin: left;
+    min-height: 100vh;
+}
+
+main .filtro{display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    gap: 20px;
+}
+
+main .filtro button{background-color: rgba(0, 0, 0, 0.212);
+border-radius: 10px;
+border: none;
+padding: 10px;
+font-size: 1.2em;
+cursor: pointer;
+margin-left: 50px;
+width: 150px;
+}
+
+main .filtro button:hover{color: white;}
+
+
+
+
+main .cardapio{display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+main .cardapio .todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+background:rgba(0, 0, 0, 0.212);
+color: white;
+border-radius: 20px;
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+main .cardapio img{width: 200px;
+height: 200px;
+border-radius: 20px;
+}
+
+main .cardapio .Sobre button{
+    background: none;
+    border: 0px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+    color: black;
+}
+
+main .cardapio .Sobre button:hover{color: whitesmoke;}
+
+
+
+
+
+
+
+footer{display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+background-color: gray;
+bottom: 0;
+width: 100%;
+
+
+
+}
+    
+    footer ul {display: flex;
+    gap: 30px;
+    margin: 50px 0;
+    justify-content: center;
+    align-items: center;
+}
+    
+    footer ul li {list-style: none;
+    color: black;
+    font-size: 1.5em;}
+    
+    footer ul li a{font-size: 2em;
+    color: white;}
+    
+    footer ul li a:hover{filter: drop-shadow(0px 0px 10px white);}
+    
+
+
+
+@media screen and (max-width:1200px) {
+    header nav ul{display: none;}
+
+    header h1{margin-bottom: 25px;
+        font-size: 1.3em;
+    border: none;}
+
+
+    footer ul{flex-direction: column;
+    align-items: start;}
+    
+
+    main .filtro button{margin-bottom:10px;
+    margin-left: 50px;}
+}
+
+
+
+
+@keyframes iniciar{0%{scale: 1.2;
+    opacity: 0.5;
+}
+
+
+100%{
+    scale: 1;
+    opacity: 1;
+ 
+
+}}
